@@ -1,0 +1,44 @@
+{
+	"name": "dbt",
+	"version": "0.0.1",
+	"publisher": "VisualBI",
+	"author": {
+		"name": "VisualBI"
+	},
+	"license": "MIT",
+	"icon": "icon.png",
+	"description": "Jinja and SQL support for Visual Studio Code",
+	"displayName": "DBT",
+	"categories": [
+		"Programming Languages",
+		"Snippets",
+		"Linters"
+	],
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "dbt",
+				"aliases": [
+					"DBT"
+				],
+                "extensions": [".sql"],
+				"configuration": "./dbt.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "jinja",
+				"scopeName": "source.jinja",
+				"path": "./syntaxes/jinja.json"
+			},
+			{
+				"language": "sql",
+				"scopeName": "source.jinjasql",
+				"path": "./syntaxes/sql.json"
+			}
+		]
+	}
+}
