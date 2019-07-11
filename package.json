@@ -6,7 +6,6 @@
 		"name": "VisualBI"
 	},
 	"license": "MIT",
-	"icon": "icon.png",
 	"description": "Jinja and SQL support for Visual Studio Code",
 	"displayName": "DBT",
 	"categories": [
@@ -30,15 +29,11 @@
 		],
 		"grammars": [
 			{
-				"language": "jinja",
+				"language": "dbt",
 				"scopeName": "source.jinja",
-				"path": "./syntaxes/jinja.json"
-			},
-			{
-				"language": "sql",
-				"scopeName": "source.jinjasql",
-				"path": "./syntaxes/sql.json"
+				"path": "./syntaxes/jinja.json"				
 			}
+
 		]
 	}
 }
