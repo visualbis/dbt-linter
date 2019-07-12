@@ -34,7 +34,7 @@
             "include": "source.jinja"
         },
           {
-            "include": "source.jinjasql"
+            "include": "source.sql"
           }
         ]
       }

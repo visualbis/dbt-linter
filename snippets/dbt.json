@@ -1,0 +1,318 @@
+{
+    "AND": {
+      "prefix": "AND",
+      "body": [
+        "AND"
+      ],
+      "description": "AND"
+    },
+    "OR": {
+      "prefix": "OR",
+      "body": [
+        "OR"
+      ],
+      "description": "OR"
+    },
+    "ALTER TABLE": {
+      "prefix": "ALTER TABLE",
+      "body": [
+        "ALTER TABLE"
+      ],
+      "description": "ALTER TABLE"
+    },
+    "AS": {
+      "prefix": "AS",
+      "body": [
+        "AS"
+      ],
+      "description": "AS"
+    },
+    "BETWEEN": {
+      "prefix": "BETWEEN",
+      "body": [
+        "BETWEEN"
+      ],
+      "description": "BETWEEN"
+    },
+    "CREATE DATABASE": {
+      "prefix": "CREATE DATABASE",
+      "body": [
+        "CREATE DATABASE"
+      ],
+      "description": "CREATE DATABASE"
+    },
+    "CREATE TABLE": {
+      "prefix": "CREATE TABLE",
+      "body": [
+        "CREATE TABLE"
+      ],
+      "description": "CREATE TABLE"
+    },
+    "CREATE INDEX": {
+      "prefix": "CREATE INDEX",
+      "body": [
+        "CREATE INDEX"
+      ],
+      "description": "CREATE INDEX"
+    },
+    "CREATE VIEW": {
+      "prefix": "CREATE VIEW",
+      "body": [
+        "CREATE VIEW"
+      ],
+      "description": "CREATE VIEW"
+    },
+    "DELETE": {
+      "prefix": "DELETE",
+      "body": [
+        "DELETE"
+      ],
+      "description": "DELETE"
+    },
+    "DROP DATABASE": {
+      "prefix": "DROP DATABASE",
+      "body": [
+        "DROP DATABASE"
+      ],
+      "description": "DROP DATABASE"
+    },
+    "DROP INDEX": {
+      "prefix": "DROP INDEX",
+      "body": [
+        "DROP INDEX"
+      ],
+      "description": "DROP INDEX"
+    },
+    "DROP TABLE": {
+      "prefix": "DROP TABLE",
+      "body": [
+        "DROP TABLE"
+      ],
+      "description": "DROP TABLE"
+    },
+    "EXISTS": {
+      "prefix": "EXISTS",
+      "body": [
+        "EXISTS"
+      ],
+      "description": "EXISTS"
+    },
+    "GROUP BY": {
+      "prefix": "GROUP BY",
+      "body": [
+        "GROUP BY"
+      ],
+      "description": "GROUP BY"
+    },
+    "HAVING": {
+      "prefix": "HAVING",
+      "body": [
+        "HAVING"
+      ],
+      "description": "HAVING"
+    },
+    "IN": {
+      "prefix": "IN",
+      "body": [
+        "IN"
+      ],
+      "description": "IN"
+    },
+    "INSERT INTO": {
+      "prefix": "INSERT INTO",
+      "body": [
+        "INSERT INTO"
+      ],
+      "description": "INSERT INTO"
+    },
+    "INNER JOIN": {
+      "prefix": "INNER JOIN",
+      "body": [
+        "INNER JOIN"
+      ],
+      "description": "INNER JOIN"
+    },
+    "LEFT JOIN": {
+      "prefix": "LEFT JOIN",
+      "body": [
+        "LEFT JOIN"
+      ],
+      "description": "LEFT JOIN"
+    },
+    "RIGHT JOIN": {
+      "prefix": "RIGHT JOIN",
+      "body": [
+        "RIGHT JOIN"
+      ],
+      "description": "RIGHT JOIN"
+    },
+    "FULL JOIN": {
+      "prefix": "FULL JOIN",
+      "body": [
+        "FULL JOIN"
+      ],
+      "description": "FULL JOIN"
+    },
+    "LIKE": {
+      "prefix": "LIKE",
+      "body": [
+        "LIKE"
+      ],
+      "description": "LIKE"
+    },
+    "ORDER BY": {
+      "prefix": "ORDER BY",
+      "body": [
+        "ORDER BY"
+      ],
+      "description": "ORDER BY"
+    },
+    "SELECT": {
+      "prefix": "SELECT",
+      "body": [
+        "SELECT"
+      ],
+      "description": "SELECT"
+    },
+    "SELECT *": {
+      "prefix": "SELECT *",
+      "body": [
+        "SELECT *"
+      ],
+      "description": "SELECT *"
+    },
+    "SELECT DISTINCT": {
+      "prefix": "SELECT DISTINCT",
+      "body": [
+        "SELECT DISTINCT"
+      ],
+      "description": "SELECT DISTINCT"
+    },
+    "SELECT INTO": {
+      "prefix": "SELECT INTO",
+      "body": [
+        "SELECT INTO"
+      ],
+      "description": "SELECT INTO"
+    },
+    "SELECT TOP": {
+      "prefix": "SELECT TOP",
+      "body": [
+        "SELECT TOP"
+      ],
+      "description": "SELECT TOP"
+    },
+    "TRUNCATE TABLE": {
+      "prefix": "TRUNCATE TABLE",
+      "body": [
+        "TRUNCATE TABLE"
+      ],
+      "description": "TRUNCATE TABLE"
+    },
+    "UNION": {
+      "prefix": "UNION",
+      "body": [
+        "UNION"
+      ],
+      "description": "UNION"
+    },
+    "UNION ALL": {
+      "prefix": "UNION ALL",
+      "body": [
+        "UNION ALL"
+      ],
+      "description": "UNION ALL"
+    },
+    "UPDATE": {
+      "prefix": "UPDATE",
+      "body": [
+        "UPDATE"
+      ],
+      "description": "UPDATE"
+    },
+    "WHERE": {
+      "prefix": "WHERE",
+      "body": [
+        "WHERE"
+      ],
+      "description": "WHERE"
+    },
+    "block": {
+      "prefix": "block",
+      "body": [
+        "block"
+      ],
+      "description": "block"
+    },
+    "filter": {
+      "prefix": "filter",
+      "body": [
+        "filter"
+      ],
+      "description": "filter"
+    },
+    "if": {
+      "prefix": "if",
+      "body": [
+        "if"
+      ],
+      "description": "if"
+    },
+    "macro": {
+      "prefix": "macro",
+      "body": [
+        "macro"
+      ],
+      "description": "macro"
+    },
+    "raw": {
+      "prefix": "raw",
+      "body": [
+        "raw"
+      ],
+      "description": "raw"
+    },
+    "endblock": {
+      "prefix": "endblock",
+      "body": [
+        "endblock"
+      ],
+      "description": "endblock"
+    },
+    "endfilter": {
+      "prefix": "endfilter",
+      "body": [
+        "endfilter"
+      ],
+      "description": "endfilter"
+    },
+    "endfor": {
+      "prefix": "endfor",
+      "body": [
+        "endfor"
+      ],
+      "description": "endfor"
+    },
+    "endif": {
+      "prefix": "endif",
+      "body": [
+        "endif"
+      ],
+      "description": "endif"
+    },
+    "endmacro": {
+      "prefix": "endmacro",
+      "body": [
+        "endmacro"
+      ],
+      "description": "endmacro"
+    },
+    "endraw": {
+      "prefix": "endraw",
+      "body": [
+        "endraw"
+      ],
+      "description": "endraw"
+    }
+    
+  }
