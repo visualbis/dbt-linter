@@ -16,6 +16,9 @@
 	"engines": {
 		"vscode": "^1.0.0"
 	},
+	"activationEvents": [
+        "onLanguage:sql"
+    ],
 	"contributes": {
 		"languages": [
 			{
@@ -40,6 +43,23 @@
                 "language": "dbt",
                 "path": "./snippets/dbt.json"
             }
+		],
+		"commands": [{
+            "command": "formatsql",
+            "title": "Format SQL"
+        }],
+        "keybindings": [
+            {
+                "command": "formatsql",
+                "key": "alt+shift+f",
+                "when": "editorTextFocus && !editorReadonly && editorLangId == 'sql'"
+            }
         ]
-	}
+	},
+	"scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "dependencies": {
+        "vkbeautify": "0.99.1"
+    }
 }
