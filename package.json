@@ -5,6 +5,7 @@
 	"author": {
 		"name": "VisualBI"
 	},
+	"main": "./extension",
 	"license": "MIT",
 	"description": "Jinja and SQL support for Visual Studio Code",
 	"displayName": "DBT",
@@ -17,8 +18,8 @@
 		"vscode": "^1.0.0"
 	},
 	"activationEvents": [
-        "onLanguage:sql"
-    ],
+		"onLanguage:sql"
+	],
 	"contributes": {
 		"languages": [
 			{
@@ -26,7 +27,9 @@
 				"aliases": [
 					"DBT"
 				],
-                "extensions": [".sql"],
+				"extensions": [
+					".sql"
+				],
 				"configuration": "./dbt.configuration.json"
 			}
 		],
@@ -34,32 +37,36 @@
 			{
 				"language": "dbt",
 				"scopeName": "source.jinja",
-				"path": "./syntaxes/jinja.json"				
+				"path": "./syntaxes/jinja.json"
 			}
-
 		],
-        "snippets": [
-            {
-                "language": "dbt",
-                "path": "./snippets/dbt.json"
-            }
+		"snippets": [
+			{
+				"language": "dbt",
+				"path": "./snippets/dbt.json"
+			}
 		],
-		"commands": [{
-            "command": "formatsql",
-            "title": "Format SQL"
-        }],
-        "keybindings": [
-            {
-                "command": "formatsql",
-                "key": "alt+shift+f",
-                "when": "editorTextFocus && !editorReadonly && editorLangId == 'sql'"
-            }
-        ]
+		"commands": [
+			{
+				"command": "formatsql",
+				"title": "Format SQL"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "formatsql",
+				"key": "ctrl+s",
+				"when": "editorTextFocus && !editorReadonly && editorLangId == 'dbt'"
+			}
+		]
 	},
 	"scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install"
-    },
-    "dependencies": {
-        "vkbeautify": "0.99.1"
-    }
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"vscode": "^1.1.6"
+	},
+	"dependencies": {
+		"vkbeautify": "0.99.1"
+	}
 }

@@ -3,6 +3,7 @@ var vscode = require('vscode');
 var vkbeautify = require('vkbeautify');
 function activate(context) {
     var disposable = vscode.commands.registerCommand('formatsql', function () {
+        console.log("Format")
         var selections = [];
         for (var i = 0; i < vscode.window.activeTextEditor.selections.length; i++) {
             var s = vscode.window.activeTextEditor.selections[i];
