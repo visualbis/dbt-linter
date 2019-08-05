@@ -3,7 +3,6 @@ var vscode = require('vscode');
 var vkbeautify = require('vkbeautify');
 function activate(context) {
     var disposable = vscode.commands.registerCommand('formatsql', function () {
-        console.log("Format")
         var selections = [];
         for (var i = 0; i < vscode.window.activeTextEditor.selections.length; i++) {
             var s = vscode.window.activeTextEditor.selections[i];
@@ -23,9 +22,11 @@ function activate(context) {
                 builder.replace(range, bt);
             }
         });
+        vscode.window.activeTextEditor.document.save();
     });
 
     context.subscriptions.push(disposable);
+    
 }
 exports.activate = activate;
 
