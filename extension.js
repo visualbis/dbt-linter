@@ -1,6 +1,7 @@
 
 var vscode = require('vscode');
-var vkbeautify = require('vkbeautify');
+//var vkbeautify = require('vkbeautify');
+var sqlFormatter =  require('sql-formatter');
 function activate(context) {
     var disposable = vscode.commands.registerCommand('formatsql', function () {
         var selections = [];
@@ -18,7 +19,8 @@ function activate(context) {
             for (var i = 0; i < selections.length; i++) {
                 var range = selections[i];
                 var text = vscode.window.activeTextEditor.document.getText(range).toString();
-                var bt = vkbeautify.sql(text);
+                //var bt = vkbeautify.sql(text);
+                var bt = sqlFormatter.format(text);
                 builder.replace(range, bt);
             }
         });

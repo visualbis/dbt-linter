@@ -27,6 +27,13 @@
       ],
       "description": "AS"
     },
+    "IFF": {
+      "prefix": "IFF",
+      "body": [
+        "IFF"
+      ],
+      "description": "IFF"
+    },
     "BETWEEN": {
       "prefix": "BETWEEN",
       "body": [
