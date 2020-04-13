@@ -1,1 +1,29 @@
-# dbt-linter
+
+
+dbt-linter is a Visual Studio Code extension for linting and intellisense for DBT files
+
+## Installation
+- Open Visual Studio Code
+- Select Extensions (Ctrl + Shift + X)
+- Open “More Action” menu(ellipsis on the top) and click “Install from VSIX…”
+- Locate VSIX file and select
+- Reload Visual Studio Code
+
+## Build the Extension
+Before we build our extension, We need a node package "VSCE". To install run the below command in the command line. Make sure you have "npm" installed.
+
+```bash
+npm install -g vsce
+```
+To build the extension. Go to the repository folder in command line and type the below command
+```bash
+vsce package
+# myExtension.vsix generated
+```
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
